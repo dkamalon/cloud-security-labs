@@ -46,6 +46,8 @@ aws cloudtrail create-trail --name MyTrail --s3-bucket-name my-cloudtrail-logs
     }
   ]
 }
+
+
 Azure
 Identity and Conditional Access policies
 
@@ -54,11 +56,7 @@ Network Security Groups (NSGs) configuration
 Defender for Cloud monitoring
 
 Azure Sentinel for security alerting and automation
-
 Sample Azure CLI commands:
-bash
-Copy
-Edit
 # Create NSG rule to allow only SSH from specific IP
 az network nsg rule create --resource-group MyResourceGroup --nsg-name MyNSG --name AllowSSH --protocol Tcp --direction Inbound --priority 1000 --source-address-prefixes 203.0.113.0/24 --destination-port-ranges 22 --access Allow
 
@@ -67,15 +65,13 @@ az security pricing create --name VirtualMachines --tier 'Standard'
 
 # Create a conditional access policy (PowerShell)
 New-AzureADMSConditionalAccessPolicy -DisplayName "Require MFA for admins" -Conditions @{Users=@{IncludeUsers=@("All")} } -GrantControls @{BuiltInControls=@("Mfa")}
+
 GCP
 IAM permissions management
 
 Security Command Center for risk assessment
 
 Sample GCP commands:
-bash
-Copy
-Edit
 # Assign role to user with least privilege
 gcloud projects add-iam-policy-binding my-project --member=user:example@example.com --role=roles/storage.objectViewer
 
@@ -84,6 +80,7 @@ gcloud services enable securitycenter.googleapis.com
 
 # List findings in Security Command Center
 gcloud scc findings list --organization=123456789
+
 Mini Project: Secure AWS Web Application
 Built a secure web app using EC2 instances and S3 storage with strict IAM roles.
 
@@ -98,9 +95,6 @@ Documented findings and remediation steps.
 All project files and documentation are published here for review.
 
 Example IAM Role JSON (least privilege):
-json
-Copy
-Edit
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -117,3 +111,4 @@ Edit
     }
   ]
 }
+
