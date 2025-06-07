@@ -111,4 +111,3 @@ Example IAM Role JSON (least privilege):
     }
   ]
 }
-
