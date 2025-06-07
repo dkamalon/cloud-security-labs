@@ -1,112 +1,54 @@
+# Cloud Security Labs & Mini Project
 
-# ☁️ Cloud Security Labs & Mini Project  
-Hands-on labs and a mini project focused on **cloud security** across **AWS, Azure, and GCP**.  
-Built to gain practical experience in identifying and remediating misconfigurations and securing cloud environments.
-
-## 🔗 Live Repository  
-[github.com/deepakkamalon/cloud-security-labs](https://github.com/deepakkamalon/cloud-security-labs)
+**GitHub:** [github.com/dkamalon/cloud-security-labs](https://github.com/dkamalon/cloud-security-labs)
 
 ---
 
-## 📚 Summary
+## About This Repository
 
-- 35+ hours of guided and self-designed cloud security labs  
-- Focus on Identity & Access Management, threat detection, encryption, and misconfiguration analysis  
-- Includes a full mini-project: Secure AWS web app deployment with real-world attack simulations  
+This repo showcases my practical experience in cloud security through in-depth labs and a secure application project across AWS, Azure, and GCP. It reflects my commitment to mastering cloud security best practices, detecting vulnerabilities, and implementing robust defenses.
 
 ---
 
-## 🔐 Cloud Platforms & Labs
+## Labs Completed
 
-### 🚀 AWS
+- **AWS:**  
+  - IAM policy creation and management  
+  - S3 bucket security and permissions  
+  - KMS encryption key management  
+  - CloudTrail setup and log analysis  
+  - GuardDuty threat detection  
+  - Web Application Firewall (WAF) configuration  
 
-- IAM Roles, Policies & Least Privilege Access  
-- S3 Bucket Security: Public Access, Encryption, and Bucket Policies  
-- KMS Encryption for storage and data protection  
-- CloudTrail for auditing and logging  
-- GuardDuty for threat detection  
-- WAF for application-level protection
+- **Azure:**  
+  - Identity and Conditional Access policies  
+  - Network Security Groups (NSGs) configuration  
+  - Defender for Cloud monitoring  
+  - Azure Sentinel for security alerting and automation  
 
-### ☁️ Azure
-
-- Azure AD Identity & Conditional Access  
-- NSGs (Network Security Groups)  
-- Microsoft Defender for Cloud configuration  
-- Azure Sentinel (SIEM)
-
-### 🌐 GCP
-
-- IAM Permissions and Roles  
-- Security Command Center for threat detection and misconfigurations  
+- **GCP:**  
+  - IAM permissions management  
+  - Security Command Center usage for risk assessment  
 
 ---
 
-## 🛠️ Mini Project: Secure AWS Web Application
+## Mini Project
 
-### 📌 Description  
-Deployed a simple web application on AWS using EC2, S3, IAM, and security services.  
-Intentionally simulated misconfigurations to demonstrate security risks and their remediation.
-
-### ✅ Features
-
-- EC2 Instance hosting web app with secure IAM role  
-- S3 Bucket with public access simulation and then restriction  
-- Logging with CloudTrail & Monitoring  
-- WAF configuration to prevent common attacks  
-- IAM misconfig simulation (e.g., full admin privileges) and secure policy rewrite  
-- Documentation with before/after screenshots and JSON policy files  
-
-### 📂 Project Structure
-
-```
-/aws-secure-webapp
-├── architecture-diagram.png
-├── EC2-setup.md
-├── S3-security.md
-├── IAM-policy-misconfigs.md
-├── WAF-setup.md
-├── CloudTrail-logs.md
-└── remediation-notes.md
-```
+- Developed a secure AWS web application leveraging EC2 instances and S3 storage with strict IAM roles.  
+- Implemented comprehensive logging and monitoring via CloudTrail and GuardDuty.  
+- Configured WAF to protect against common web threats.  
+- Simulated common misconfigurations such as publicly accessible S3 buckets and overly permissive IAM roles, and documented remediation steps.  
+- All project code, configurations, and documentation are available in this repository.
 
 ---
 
-## 🎯 TryHackMe: Cloud Path Labs
+## Additional Learning
 
-- IAM Exploitation  
-- Metadata Service Abuse  
-- S3 Bucket Enumeration and Misconfiguration  
-- Completed all Cloud Path modules: [TryHackMe Profile](https://tryhackme.com/p/deepakkamalon)
-
----
-
-## 📸 Screenshots
-
-_Add key screenshots from labs and project output here._
+- Completed TryHackMe Cloud Path labs focusing on:  
+  - IAM exploitation techniques  
+  - Metadata abuse  
+  - S3 access misconfigurations  
 
 ---
 
-## 📁 How to Use
-
-1. Clone the repo:  
-   ```bash
-   git clone https://github.com/deepakkamalon/cloud-security-labs.git
-   ```
-2. Explore each cloud platform’s folder for step-by-step lab walkthroughs  
-3. Check the `aws-secure-webapp/` directory for the mini project
-
----
-
-## 🧠 Skills Demonstrated
-
-- Cloud security fundamentals  
-- Hands-on configuration of IAM, encryption, logging, SIEM, and firewalls  
-- Cloud-native tools (CloudTrail, Sentinel, Security Command Center)  
-- Real-world misconfiguration simulation and remediation  
-- Documentation & GitHub project structure
-
----
-
-## 📫 Contact
-
-Feel free to connect on [LinkedIn](https://linkedin.com/in/deepakkamalon) or drop an issue if you have any questions!
+*Created by [dkamalon](https://github.com/dkamalon)*
